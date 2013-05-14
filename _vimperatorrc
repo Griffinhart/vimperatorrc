@@ -1,0 +1,68 @@
+"3.7 (created: 2013/04/03 18:20:07)
+
+command! -nargs=+ -description="Query Wolfram Alpha" calculate tabopen http://www.wolframalpha.com/input/?i=<args>
+command! -description="Toggles the tab bar" tb set gui=noaddons,nobookmarks,nomenu,navigation,invtabs
+command! -nargs=+ -description="Translates the given argument from Japanese to English" translate tabopen http://translate.google.com/#ja|en|<args>
+highlight Boolean color: #f00;
+highlight CmdLine color: #0ff; background: #000; font-family: Inconsolata; font-size: 12px; padding: 0px; vertical-align: middle; border: none;
+highlight CompDesc color: #080; width: 50%;
+highlight CompItem[selected] background: #333;
+highlight CompResult color: #0ff; width: 45%; overflow: hidden;
+highlight CompTitle color: #ddc; background: #000; font-weight: bold;
+highlight CompTitle>* color: #aaa; font-weight: bold; border-top: 1px solid gray; border-bottom: 1px solid #BBB; padding: 1px 0.5ex;
+highlight ContentSeparator border:none;
+highlight ErrorMsg color: #c22; background-color: #000; font-weight: bold;
+highlight Function color: #04c;
+highlight Hint color: #f00; background-color: #0ff; border-color: ButtonShadow; font-family: Inconsolata; font-size: 12px; border-width: 0px; border-style: solid; padding 0 1px;
+highlight HintActive color: black; background: #0ff;
+highlight HintElem color: white; background-color: #000;
+highlight InfoMsg color: #ddc; background: #000;
+highlight Keyword color: #CC0;
+highlight LineNr color: orange; background-color: #000;
+highlight ModeMsg color: #ddc; background: #000;
+highlight MoreMsg color: #080; background: #222; font-weight: bold; -moz-border-radius: 5px; padding-left: 5px;
+highlight Normal color: #ddc; background: #000;
+highlight Null color: #00c;
+highlight Number color: #00c;
+highlight Object color: #c40;
+highlight Question color: #080; background: #222; font-weight: bold; -moz-border-radius: 5px; padding-left: 5px;
+highlight StatusLine color: #0ff; background: #000; font-family: Inconsolata; font-size: 14px; margin-top: 1px;
+highlight String color: #0c0;
+highlight TabNumber color: #ddc; font-weight: bold; margin: 0; padding-right: .3ex; text-shadow: #000 -1px 0 0, #000 0 1px 0, #000 1px 0 0, #000 0 -1px 0;
+highlight Tag color: #C00;
+highlight Title color: #ddc; background: #333; font-weight: bold;
+highlight URL color: #080; text-decoration: none; padding: 0 2px;
+highlight URL:hover color: #880; background-color: #222; -moz-border-radius: 5px; cursor: pointer;
+inoremap <C-a> <Insert><C-a><Insert>
+map <C-[> :back<Return>
+map <C-]> :forward<Return>
+map <A-f> ;b
+map X :undo<Return>
+map x :tabclose<Space>-select<Space>left<Return>
+map <C-x> :tabclose<Space>-select<Space>right<Return>
+map <A-x> :tabclose<Space>-select<Space>lastactive<Return>
+noremap <C-S-T> <Nop>
+noremap <C-t> <Nop>
+noremap <C-w> <Nop>
+noremap <C-Tab> <Nop>
+noremap <C-S-Tab> <Nop>
+noremap <BS> <Nop>
+noremap <F5> <Nop>
+noremap <C-o> <Nop>
+noremap <C-i> <Nop>
+noremap d <C-d>
+noremap u <C-u>
+noremap D <Nop>
+noremap <C-d> <Nop>
+noremap <C-u> <Nop>
+set complete=slfbh
+set "editor=mintty -e vim"
+set errorbells
+set focuscontent
+set newtab=all
+set noscrollbars
+set tabnumbers
+set "titlestring=Pale Moon"
+source! "C:\\Users\\Griffinhart\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
