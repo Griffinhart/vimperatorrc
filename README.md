@@ -7,10 +7,6 @@ The colorscheme is based on vimPgray.vimp ( https://github.com/ronin13/seed/blob
 
 Things and stuff:
 - Unbinds many of the default Firefox keys, such as ^t, ^T, ^w, etc.
-- Remaps d to ^d
-- Unmaps ^d
-- Remaps u to ^u
-- Unmaps ^u
 - Unmaps ^i and ^o
 - Maps ^[ to history previous
 - Maps ^] to history forward
