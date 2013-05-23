@@ -37,10 +37,6 @@ inoremap <C-a> <Insert><C-a><Insert>
 map <C-[> :back<Return>
 map <C-]> :forward<Return>
 map <A-f> ;b
-map X :undo<Return>
-map x :tabclose<Space>-select<Space>left<Return>
-map <C-x> :tabclose<Space>-select<Space>right<Return>
-map <A-x> :tabclose<Space>-select<Space>lastactive<Return>
 noremap <C-S-T> <Nop>
 noremap <C-t> <Nop>
 noremap <C-w> <Nop>
@@ -50,11 +46,6 @@ noremap <BS> <Nop>
 noremap <F5> <Nop>
 noremap <C-o> <Nop>
 noremap <C-i> <Nop>
-noremap d <C-d>
-noremap u <C-u>
-noremap D <Nop>
-noremap <C-d> <Nop>
-noremap <C-u> <Nop>
 set complete=slfbh
 set "editor=mintty -e vim"
 set errorbells
