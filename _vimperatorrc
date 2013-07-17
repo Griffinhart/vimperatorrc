@@ -37,6 +37,9 @@ inoremap <C-a> <Insert><C-a><Insert>
 map <C-[> :back<Return>
 map <C-]> :forward<Return>
 map <A-f> ;b
+map <A-d> :tabclose<Space>-select=lastactive<Return>
+map J :tabnext<Return>
+map K :tabprevious<Return>
 noremap <C-S-T> <Nop>
 noremap <C-t> <Nop>
 noremap <C-w> <Nop>
